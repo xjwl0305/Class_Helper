@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/go_setting"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/setting"
+        android:layout_gravity="end"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/go_noti"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="공지사항"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/go_memo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="메모"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/go_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="지도"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/go_covid19"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="코로나19"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/go_mail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="메일"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+</LinearLayout>
