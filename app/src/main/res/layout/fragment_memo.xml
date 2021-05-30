@@ -25,6 +25,7 @@
             android:layout_marginStart="5dp"
             tools:ignore="RtlHardcoded" />
         <TextView
+            android:id="@id/memo"
             android:layout_width="50dp"
             android:layout_height="25dp"
             android:layout_marginLeft="150dp"
@@ -33,11 +34,24 @@
             android:id="@+id/memo_go_setting"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="130dp"
             android:src="@drawable/setting"
-            tools:ignore="RtlHardcoded" />
+            android:layout_marginStart="130dp" />
     </LinearLayout>
-
-
-
+    <EditText
+        android:id="@+id/et_save"
+        android:layout_width="match_parent"
+        android:background="@drawable/edit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:lines="25"
+        android:gravity="top"
+        android:layout_height="match_parent"/>
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save" />
 </LinearLayout>

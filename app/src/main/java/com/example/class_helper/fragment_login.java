@@ -1,5 +1,6 @@
 package com.example.class_helper;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,11 +20,8 @@ public class fragment_login extends Fragment {
         login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                fragment_home fragment_home = new fragment_home();
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.fragment_container, fragment_home);
-                transaction.addToBackStack(null);
-                transaction.commit();
+                Intent intent = new Intent(getActivity(), fragment_home.class);
+                startActivity((intent));
             }
         });
         return view;

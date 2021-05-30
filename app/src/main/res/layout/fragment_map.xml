@@ -33,10 +33,17 @@
             android:id="@+id/map_go_setting"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="130dp"
             android:src="@drawable/setting"
             tools:ignore="RtlHardcoded" />
     </LinearLayout>
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="695dp"
+        tools:context=".MainActivity"
+        android:name="com.google.android.gms.maps.MapFragment">
+    </com.google.android.gms.maps.MapView>
 
 
 

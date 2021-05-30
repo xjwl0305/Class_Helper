@@ -7,21 +7,21 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-public class fragment_setting extends Fragment {
-    public View onCreateView(LayoutInflater layoutInflater, @Nullable ViewGroup container, @Nullable Bundle saveInstanceState) {
-        View view = layoutInflater.inflate(R.layout.fragment_setting, container, false);
-        MainActivity activity = (MainActivity) getActivity();
-        ImageView back_button = view.findViewById(R.id.setting_back_button);
-        back_button.setOnClickListener(new View.OnClickListener(){
+public class fragment_setting extends AppCompatActivity {
+    @Override
+    protected void onCreate(@Nullable Bundle saveInstanceState) {
+        super.onCreate(saveInstanceState);
+        setContentView(R.layout.fragment_setting);
+        ImageView back_button = (ImageView) findViewById(R.id.setting_back_button);
+        back_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                assert activity != null;
-                activity.onBackPressed();
+            public void onClick(View v) {
+                finish();
             }
         });
-        return view;
     }
 }
