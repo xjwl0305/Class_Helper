@@ -1,43 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:id="@+id/covid19">
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        tools:ignore="UselessParent">
-        <ImageView
-            android:id="@+id/covid_back_button"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_gravity="left"
-            android:clickable="true"
-            android:src="@drawable/back"
-            android:focusable="true"
-            android:layout_marginStart="5dp"
-            tools:ignore="RtlHardcoded" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_marginLeft="150dp"
-            android:text="COVID-19"/>
-        <ImageView
-            android:id="@+id/covid_go_setting"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="150dp"
-            android:src="@drawable/setting"
-            tools:ignore="RtlHardcoded" />
-    </LinearLayout>
+    android:layout_height="match_parent"
+    tools:context=".fragment_covid19">
 
-
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
